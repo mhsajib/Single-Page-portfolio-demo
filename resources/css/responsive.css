@@ -1,0 +1,112 @@
+@media only screen and (max-width : 1024px){
+    /* .row{
+        margin: 0 35px;
+    }
+    .text-hero{
+        /* width: 100%; */
+    /* } */
+    /* .main-nav{
+        display: none;
+    }  */
+    /* html{
+        font-size: 57.5%;
+    } */
+    /* .testimonial-section .client-image{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .testimonial-section .client-review{
+        width: 100%;
+        float: none;
+        text-align: center;
+    } */
+    /* .span_1_of_4{
+	width: 49.2%;
+        
+    }
+    .span_1_of_4:nth-child(3){
+        margin-left: 0;
+    } */
+    /* .contract-section form{
+        width: 100%;
+    } */
+    html{
+        font-size: 77.5%;
+    }
+    .text-hero{
+
+    }
+    .text-hero h1 {
+        margin-right: 40px;
+        /* width: 90%; */
+        font-size: 25px;
+    }
+    .row{
+        margin: 0 35px;
+    }
+    .main-nav{
+        display: none;
+    }
+    .text-hero{
+        width: 80%;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .span_1_of_4{
+        width: 49.2%;
+    }
+    .span_1_of_4:nth-child(3){
+        margin-left: 0;
+    }
+    .contract-section form{
+        width: 100%;
+    }
+
+
+
+}
+@media only screen and (max-width: 980px){
+    html{
+        font-size: 53.5%;
+    }
+    .header{
+        height: 185vh;
+    }
+    .testimonial-section img{
+        margin-left: 186px;
+        margin-bottom: 20px;
+        display: block;
+        overflow: hidden;
+    }
+    .testimonial-section .client-review{
+        margin-top: 80px;
+    }
+    .client-image{
+        width: 100%;
+        display: block;
+        margin: auto;
+    
+    }
+    .client-image, .client-review{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 450px){
+    html{
+        font-size: 37.5%;
+    }
+    .row{
+        margin: 0 28px;
+    }
+
+
+    .btn-hero{
+        margin-right: 40px;
+    }
+    .footer ul li{
+        /* width: 100%; */
+        display: inline-block;
+    }
+}

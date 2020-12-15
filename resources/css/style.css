@@ -1,0 +1,517 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+    /* line-height: 1.3rem; */
+}
+header{
+    /* background: #87509c; */
+    background: linear-gradient(rgba(135, 80, 156, .9), rgba(135, 80, 156, 0.9)), url('logo.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 85vh;
+    position: relative;
+    background-attachment: fixed;
+}
+/* .......mobile menu....... */
+
+.mobile-menu{
+    display: none;
+
+}
+.mobile-menu span.bar{
+    float: right;
+    color: #fff;
+    font-size: 4rem;
+    margin-top: 4.5rem;
+    
+}
+.overlay{
+    height:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 222;
+    overflow-x: hidden;
+    width: 0%;
+    transition: .5s;
+
+}
+.overlay-content{
+    position: relative;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+.overlay  a{
+    text-decoration: none;
+    display: block;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    color: #999;
+}
+.overlay a:hover{
+    color: #fff;
+}
+.overlay .closebtn{
+    position: absolute;
+    top: 1rem;
+    right: 4.5rem;
+    font-size: 6rem;
+}
+h1{
+    color: #fff;
+    font-size: 4.2rem;
+}
+section{
+    padding: 8rem 0;
+    /* overflow: hidden; */
+}
+.row{
+    max-width: 103.7rem;
+    margin: auto;
+}
+.logo{
+    
+    float: left;
+    margin-top: 3rem;
+}
+.main-nav{
+    float: right;
+}
+/* ;;;;;;;;;;;; sticky navigation */
+
+
+.sticky .logo{
+    margin-top: .2rem;
+}
+.sticky .mobile-menu{
+    margin-top: .2rem;
+}
+.header .sticky ul li{
+    margin-top: .5rem;
+}
+
+.header ul li{
+    list-style-type: none;
+    /* float: right; */
+    padding: .3rem 1.5rem;
+    display: inline-block;
+    margin-top: 4rem;
+    background: rgba(100, 58, 121, 0);
+    padding: .8rem 1.6rem;
+    border-radius: .4rem;
+    font-size: 1.6rem;
+}
+
+.header ul li:first-child{
+    background: #643a79;
+
+}
+.header ul li:hover{
+    background: rgba(100, 58, 121, 1) ;
+    transition: .3s;
+}
+.header ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.text-hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+.text-hero h1{
+    margin-bottom: 6rem;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(135, 80, 156);
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0 .5rem .5rem #fff;
+    z-index: 9999;
+}
+.btn{
+    background: #333;
+    /* border-bottom:  black; */
+    padding: 15px 45px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6rem;
+
+}
+
+.btn-hero{
+    background: #eb7d4b;
+    border-bottom: .6rem solid #c86a40;
+    
+}
+
+ /* clear fix................... */
+
+ .clear-fix::after{
+     content: "";
+     display: block; /*table*/
+     clear: both;   
+     height: 0;
+     visibility: hidden;
+ }
+
+ /* ::::::service-section:::::: */
+
+ .service-section{
+     text-align: center;
+     background: #17c2a4;
+     color: #fff;
+ }
+ h2{
+     margin-bottom: 2rem;
+     font-size: 4rem;
+     font-weight: 600;
+     letter-spacing: .3rem;
+     margin-top: 0rem;
+ }
+ h2::after{
+     content: "";
+     display: block;
+     height: .5rem;
+     background: #fff;
+     width: 8.5rem;
+     margin: auto;
+     margin-top: 2rem;
+     background: rgb(20, 165, 140);
+ }
+ .little-description{
+     font-size: 1.8rem;
+     width: 60%;
+     /* margin: auto; */
+     margin-left: 20%;
+     line-height: 3rem;
+ }
+
+ .services-icon{
+     height: 10rem;
+     margin-top: 4.5rem;
+     margin-bottom: 3.5rem;
+ }
+ h3{
+     font-size: 2.4rem;
+     text-transform: uppercase;
+     font-weight: 600;
+ }
+ .box{
+
+ }
+ .box p{
+    
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+ }
+
+ /* ::::::::::::team section:::::::: */
+
+ .team-section{
+     background: #e7f1f8;
+     text-align: center;
+ }
+ .team-header{
+     color: #3c4761;
+     font-size: 4.2rem;
+ }
+.team-section .little-description{
+    color: #3c4761;
+    font-size: 1.8rem;
+    padding-bottom: 7rem;
+
+}
+.team-header::after{
+    content: "";
+    display: block;
+    height: .5rem;
+    background: #c8d9e5;
+}
+.team-img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+.team-section h3{
+    padding-top: 3.2rem;
+    padding-bottom: 1.5rem;
+    font-size: 2.4rem;
+}
+.designation{
+    color: #30bae7;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+.team-section p{
+    /* padding-left: 13%; */
+    /* text-align: center; */
+    /* width: 22rem; */
+    /* padding-top: 1.9rem; */
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+.social-link{
+    margin-top: 4rem;
+}
+.social-link ul li{
+   list-style-type: none;
+   display: inline-block;
+   /* text-decoration: none; */
+}
+
+.social-link ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.social-link ul li a i::before{
+    background: #bdd1df;
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 1.8rem;
+    transition: .3s;
+}
+.social-link ul li a:hover i::before{
+    background: #393939;
+    transform: rotate(360deg);
+
+}
+.skill-section{
+    text-align: center;
+}
+.skill-section h2{
+     color: #3c4761;
+}
+.skill-section h2::after{
+    background: #dfe8ed;
+}
+.skill-section h3{
+    color: #3c4761;
+}
+.skill-section .box{
+    margin-top: 4.5rem;
+}
+svg.radial-progress circle{
+    stroke-width: 5;
+}
+svg.radial-progress text{
+    fill: #3c4761;
+    font-size: 1.5rem;
+}
+svg.web-design circle{
+    stroke: #30bae7;
+}
+svg.html-css circle{
+    stroke: #d74680;
+}
+svg.graphic-design circle{
+    stroke: #15c7a8;
+}
+svg.ui-ux circle{
+    stroke: #eb7d4b;
+    /* fill: red; */
+}
+.portfolio-section{
+    text-align: center;
+    background: #ffdd99;
+}
+.portfolio-section h2::after{
+    background: #e5c37f;
+}
+.portfolio-section button{
+    margin: 4.5rem .2rem;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    background: #ebc985;
+    text-transform: uppercase;
+    outline:none;
+    transition: .3s;
+}
+.portfolio-section .col:nth-child(3){
+    margin-left: 0;
+}
+.portfolio-img{
+    height: 25rem;
+    width: 100%;
+}
+.portfolio-section h4{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: #393939;
+}
+.portfolio-section button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 .3rem .5rem #393939;
+
+}
+.portfolio-section .mixitup-control-active{
+    background: #fff;
+}
+
+ /* testimonial section */
+
+ .testimonial-section{
+
+     background: #d74680;
+     color: #fff;
+ }
+ .testimonial-section h2{
+    text-align: center;
+     
+ }
+ .testimonial-section .little-description{
+     text-align: center;
+ }
+ .testimonial-section h2::after{
+     background: #b73c6d;
+ }
+ .testimonial-section img{
+     height: 8rem;
+     width: 8rem;
+     border-radius: 50%;
+     display: inline-block;
+ }
+ .testimonial-section .client-image{
+    margin-right: 2rem;
+    width: 10rem;
+    float: left;
+
+ }
+ .testimonial-section .client-review{
+     width: 30rem;
+     display: inline-block;
+ }
+ .testimonial-section .client-review p{
+     font-size: 2rem;
+     margin-bottom: 2rem;
+     font-style: italic;
+ }
+ .testimonial-section .client-review p{
+    font-size: 2.rem;
+    display: inline-block;
+    
+}
+.testimonial-section .client-review .role{
+    font-size: 1.8rem;
+    color: #ffdd99;
+    display: inline-block;
+    margin-top: .5rem;
+
+}
+ .testimonial-section .col{
+     margin-top: 10rem;
+ }
+ .testimonial-section .col:nth-child(3){
+     margin-left: 0;
+ }
+
+
+ /* contract section */
+
+ .contract-section{
+     background: #3c5499;
+     text-align: center;
+ }
+ .contract-section h2{
+     color: #fff;
+ }
+ .contract-section h2::after{
+     background: #273a71;
+ }
+ .contract-section p.little-description{
+     color: #fff;
+     font-size: 1.8rem;
+     width: 100%;
+     margin: auto;
+     display: block;
+     margin-bottom: 5rem;
+ }
+
+ .contract-section input[type="text"],
+ .contract-section input[type="email"],
+ .contract-section textarea{
+     width: 100%;
+     background: #273a71;
+     border: .1rem solid  #273a71;
+     padding: 1rem;
+     border-radius: .5rem;
+     margin: .5rem;
+     outline: none;
+     font-size: 1.8rem;
+     color: #fff;
+
+
+ }
+
+ .contract-section form{
+    /* border: .1rem solid  #712727; */
+    width: 70%;
+    margin: auto;
+ }
+ .contract-section form ::placeholder{
+     font-size: 1.8rem;
+     color: #fff;
+ }
+ .contract-section textarea{
+     height: 20rem;
+ }
+ .contract-section input[type="button"]{
+     color:#fff;
+     margin-top: 3rem;
+     outline: none;
+     border: none;
+     border-bottom: .5rem solid #299ec5;
+     background: #30bae7;
+     font-size: 1.8rem;
+ }
+ footer{
+    background: #344b8e;
+    border-top: .1rem solid rgba(255, 255, 255, 0.3) ;
+ }
+.footer{
+    text-align: center;
+    padding: 4.5rem 0;
+
+
+}
+ .footer ul li{
+       list-style-type: none;
+       display: inline-block;
+       /* text-align: center; */
+       /* margin: auto; */
+       margin: 0 1rem;
+
+ }
+ .footer ul li a{
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: #fff;
+}
+ 
